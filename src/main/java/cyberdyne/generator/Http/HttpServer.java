@@ -50,14 +50,14 @@ public class HttpServer
             HttpSocket = new ServerSocket(Config.Http_Port);
 
             //Get Log
-            System.out.println("Http socket is ready on port "+Config.Http_Port);
+            System.out.println("Gena ready on port "+Config.Http_Port);
 
             //Get wait for request
             while(true)
             {
                 //Get new request
                 Socket request=HttpSocket.accept();
-
+                request.setSoTimeout(Config.HTTP_TIMEOUT);
                 //Get Log
                 //InetSocketAddress socketAddress = (InetSocketAddress) request.getRemoteSocketAddress();
                 //System.out.println("Ip is "+socketAddress.getAddress().getHostAddress());

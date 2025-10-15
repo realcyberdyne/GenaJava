@@ -12,6 +12,7 @@ public class Config
     public static boolean Http_Debug;
     public static boolean Http_File_Upload;
     public static boolean Http_Access_File;
+    public static int HTTP_TIMEOUT;
     public static String Http_User_Encript_Key;
     public static String Http_Log_File_Address;
     public static int FileSize;
@@ -31,6 +32,7 @@ public class Config
 
             //Http config
             Http_Port=Integer.parseInt(properties.getProperty("http_port").toString());;
+            HTTP_TIMEOUT=Integer.parseInt(properties.getProperty("http_timeout").toString());;
             Http_User_Encript_Key=properties.getProperty("http_user_encript_key").toString();
             Http_Log_File_Address=properties.getProperty("http_log_file_address").toString();
             Http_Debug=Boolean.parseBoolean(properties.getProperty("http_debug"));
