@@ -1,7 +1,7 @@
-package cyberdyne.generator.Http.File;
+package cyberdyne.generator.Http.Handlers.File;
 
 
-import cyberdyne.generator.Conf.Config;
+import cyberdyne.generator.Config.Config;
 
 import java.io.*;
 import java.nio.file.Files;

@@ -1,6 +1,6 @@
 package cyberdyne.generator.Functions;
 
-import cyberdyne.generator.Conf.Config;
+import cyberdyne.generator.Config.Config;
 import org.json.JSONArray;
 
 import javax.crypto.Cipher;

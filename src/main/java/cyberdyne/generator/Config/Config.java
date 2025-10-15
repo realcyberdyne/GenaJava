@@ -1,4 +1,4 @@
-package cyberdyne.generator.Conf;
+package cyberdyne.generator.Config;
 
 import java.io.FileReader;
 import java.util.Properties;

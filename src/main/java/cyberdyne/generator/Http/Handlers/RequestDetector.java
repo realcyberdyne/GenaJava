@@ -1,4 +1,4 @@
-package cyberdyne.generator.Http;
+package cyberdyne.generator.Http.Handlers;
 
 public class RequestDetector
 {

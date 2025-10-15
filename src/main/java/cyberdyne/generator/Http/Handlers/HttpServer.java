@@ -1,11 +1,13 @@
-package cyberdyne.generator.Http;
+package cyberdyne.generator.Http.Handlers;
 
-import cyberdyne.generator.Conf.Config;
-import cyberdyne.generator.Http.Assets.Assets;
-import cyberdyne.generator.Http.File.HTTPFiles;
-import cyberdyne.generator.Http.Models.FileResponseModel;
-import cyberdyne.generator.Http.Models.ResponseModel;
-import cyberdyne.generator.Http.View.HttpView;
+import cyberdyne.generator.Config.Config;
+import cyberdyne.generator.Controllers.HttpFileController;
+import cyberdyne.generator.Http.Handlers.Assets.Assets;
+import cyberdyne.generator.Http.Handlers.File.HTTPFiles;
+import cyberdyne.generator.Reponse.Models.FileResponseModel;
+import cyberdyne.generator.Reponse.Models.ResponseModel;
+import cyberdyne.generator.Http.Handlers.View.HttpView;
+import cyberdyne.generator.Route.Routes;
 import org.json.JSONObject;
 
 import java.io.*;

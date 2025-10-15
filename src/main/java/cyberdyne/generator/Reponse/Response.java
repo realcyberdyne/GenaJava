@@ -1,6 +1,6 @@
-package cyberdyne.generator.Http;
+package cyberdyne.generator.Reponse;
 
-import cyberdyne.generator.Http.Models.ResponseModel;
+import cyberdyne.generator.Reponse.Models.ResponseModel;
 
 public class Response
 {

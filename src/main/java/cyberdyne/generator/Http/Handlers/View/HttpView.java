@@ -1,4 +1,4 @@
-package cyberdyne.generator.Http.View;
+package cyberdyne.generator.Http.Handlers.View;
 
 import com.google.common.io.Resources;
 import org.apache.commons.io.Charsets;

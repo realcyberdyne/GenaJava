@@ -1,7 +1,7 @@
 package cyberdyne.generator;
 
-import cyberdyne.generator.Conf.Config;
-import cyberdyne.generator.Http.HttpServer;
+import cyberdyne.generator.Config.Config;
+import cyberdyne.generator.Http.Handlers.HttpServer;
 
 public class Main
 {

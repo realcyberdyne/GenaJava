@@ -1,4 +1,4 @@
-package cyberdyne.generator.Http.Models;
+package cyberdyne.generator.Reponse.Models;
 
 public class FileResponseModel
 {

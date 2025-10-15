@@ -1,4 +1,4 @@
-package cyberdyne.generator.Http.Models;
+package cyberdyne.generator.Reponse.Models;
 
 import cyberdyne.generator.Functions.TextEncript;
 import org.json.JSONObject;

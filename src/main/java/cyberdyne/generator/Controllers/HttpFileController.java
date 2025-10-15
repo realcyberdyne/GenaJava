@@ -1,6 +1,6 @@
-package cyberdyne.generator.Http;
+package cyberdyne.generator.Controllers;
 
-import cyberdyne.generator.Http.Models.FileResponseModel;
+import cyberdyne.generator.Reponse.Models.FileResponseModel;
 
 public class HttpFileController
 {

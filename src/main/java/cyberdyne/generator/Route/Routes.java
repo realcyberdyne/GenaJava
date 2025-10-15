@@ -1,14 +1,8 @@
-package cyberdyne.generator.Http;
+package cyberdyne.generator.Route;
 
-import cyberdyne.generator.Functions.Hash;
-import cyberdyne.generator.Http.Models.ResponseModel;
-import cyberdyne.generator.Http.Models.UserAuthModel;
-import cyberdyne.generator.Http.View.HttpView;
+import cyberdyne.generator.Controllers.HttpHandlerController;
+import cyberdyne.generator.Reponse.Models.ResponseModel;
 import org.json.JSONObject;
-import cyberdyne.generator.Conf.Config;
-
-import java.time.LocalDate;
-import java.time.LocalTime;
 
 public class Routes
 {
@@ -16,7 +10,6 @@ public class Routes
     //Get handle Get request function start
     public static ResponseModel GetHandleGetMethod(String request,String []requests,JSONObject Header)
     {
-        ResponseModel response=new ResponseModel();
 
         //Get splite first line
         String request_path=requests[0].split(" ")[1];
@@ -34,14 +27,7 @@ public class Routes
             }
         }
 
-        //Get Routes
-        switch (request_path)
-        {
-            case "/":
-                response=new HttpHandlerController().Index();
-        }
-
-        return response;
+        return new GetMapping().GetMappingHandler(request_path);
     }
     //Get handle Get request function end
 
@@ -49,8 +35,7 @@ public class Routes
     //Get handle Post request function start
     public static ResponseModel GetHandlePostMethod(String request, String []requests, JSONObject Header)
     {
-        System.out.println(request.toString().trim());
-        ResponseModel response=new ResponseModel();
+//        System.out.println(request.toString().trim());
 
         //Get splite first line
         String request_path=requests[0].split(" ")[1];
@@ -90,21 +75,8 @@ public class Routes
             }
         }
 
-        //Get Routes
-//        switch (request_path.split("\\?")[0])
-//        {
-//            case "/Login":
-//                response=new HttpHandlerController().LoginDone(parametrs_json,Header);
-//                break;
-//            case "/LoginDone":
-//                if(GetApiAuthCheckCookie(Header))
-//                    response=new HttpHandlerController().AddHubDone(parametrs_json,Header);
-//                else
-//                    response=new ResponseModel("403","text/html", HttpView.View("403"));
-//                break;
-//        }
 
-        return response;
+        return new PostMapping().GetMappingHandler(request_path);
     }
     //Get handle Post request function end
 

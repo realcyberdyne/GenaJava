@@ -1,12 +1,9 @@
-package cyberdyne.generator.Http.Assets;
+package cyberdyne.generator.Http.Handlers.Assets;
 
 import com.google.common.io.Resources;
 import org.apache.commons.io.Charsets;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.ObjectInputFilter.Config;
 
 public class Assets
 {
@@ -26,7 +23,7 @@ public class Assets
 
     public static File AssetFile(String AssetName) throws Exception
     {
-        if(cyberdyne.generator.Conf.Config.Http_Debug)
+        if(cyberdyne.generator.Config.Config.Http_Debug)
         {
             return new File(Resources.getResource("Assets"+AssetName).toURI());
         }

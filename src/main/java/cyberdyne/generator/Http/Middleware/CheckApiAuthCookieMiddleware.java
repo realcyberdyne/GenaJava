@@ -1,6 +1,6 @@
 package cyberdyne.generator.Http.Middleware;
 
-import cyberdyne.generator.Conf.Config;
+import cyberdyne.generator.Config.Config;
 import cyberdyne.generator.Functions.Hash;
 import org.json.JSONObject;
 
